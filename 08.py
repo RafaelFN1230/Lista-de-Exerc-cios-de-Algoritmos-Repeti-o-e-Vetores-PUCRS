@@ -1,13 +1,20 @@
 '''
-8. Escreva um algoritmo que calcule a média dos números digitados pelo usuário, se eles forem pares. Termine a leitura se o usuário digitar zero (0).
+8. Escreva um algoritmo que calcule a média dos números digitados pelo usuário, se eles forem pares. 
+Termine a leitura se o usuário digitar zero (0).
 '''
 
-Numero=int(input("insira aqui o numero para calcular a media: "))
+numero=1
+cont=0
 
-if Numero%2==0
-    Numero/#Numero de intens na lista
-while Numero != 0:
-    print(Numero)
-    Numero=int(input("insira aqui o numero para calcular a media: "))
-    Media=Numero/2
-    print()
+while numero != 0:
+    numero=float(input("insira aqui o numero para calcular a media: "))
+    if (numero%2==0 and numero!=0):
+        cont+=1
+        media=numero/cont
+        print("Media dos numeros pares: ",media)
+    elif(numero==0):
+        print("Encerrando programa.")
+    else:
+        print("Este numero não é par.")
+print("Media dos numeros pares: ",media)
+       
